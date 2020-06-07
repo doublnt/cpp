@@ -8,7 +8,7 @@ int testMethod() {
   return 0;
 }
 
-int main() {
+int main3() {
   testMethod();
 
   unsigned u1 = 10;

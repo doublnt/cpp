@@ -24,6 +24,9 @@
     <ClCompile Include="Inline-Contain-Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="literal-test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales_item.h">
