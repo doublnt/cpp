@@ -139,13 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Book_Store.cpp" />
-    <ClCompile Include="cpp-console-application.cpp" />
-    <ClCompile Include="Inline-Contain-Test.cpp" />
-    <ClCompile Include="literal-test.cpp" />
+    <ClInclude Include="Sales_item.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sales_item.h" />
+    <ClCompile Include="source\Book_Store.cpp" />
+    <ClCompile Include="source\cpp-console-application.cpp" />
+    <ClCompile Include="source\Inline-Contain-Test.cpp" />
+    <ClCompile Include="source\literal-test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
