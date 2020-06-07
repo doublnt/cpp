@@ -2,7 +2,7 @@
 
 #include "Sales_item.h"
 
-int main() {
+int main2() {
   Sales_item salesItem;
 
   if (std::cin >> salesItem) {

@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Book_Store.cpp" />
     <ClCompile Include="cpp-console-application.cpp" />
+    <ClCompile Include="Inline-Contain-Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales_item.h" />
