@@ -9,6 +9,14 @@ void print_val(int val1, int val2, double val3, double val4) {
   std::cout << "val1:" << val1 << "\tval2:" << val2 << "\tval3:" << val3
             << "\tval4:" << val4 << std::endl;
 }
+
+char16_t fDoSomething(char16_t char_value) {
+  std::cout << "Hello, World." << char_value << std::endl;
+  ++char_value;
+
+  return char_value;
+}
+
 int main() {
   // 8 ½øÖÆ
   int a1 = 07;
@@ -105,4 +113,10 @@ int main() {
   int const *int_const_ptr = &value;
 
   std::cout << *int_ptr << std::endl;
+
+  char16_t char_value_1 = 'a';
+
+  decltype(fDoSomething(char_value_1)) decltype_sum = 'b';
+
+  std::cout << decltype_sum << std::endl;
 }
