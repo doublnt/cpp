@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Sales_item.h" />
+    <ClInclude Include="Sales_YinXi_Data.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Book_Store.cpp" />
