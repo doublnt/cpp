@@ -99,4 +99,10 @@ int main() {
   pointer_double = &d_value2;
 
   std::cout << *pointer_double << std::endl;
+
+  int value = 100;
+  const int *int_ptr = &value;
+  int const *int_const_ptr = &value;
+
+  std::cout << *int_ptr << std::endl;
 }
