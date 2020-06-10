@@ -17,7 +17,7 @@ char16_t fDoSomething(char16_t char_value) {
   return char_value;
 }
 
-int main() {
+int main5() {
   // 8 ½øÖÆ
   int a1 = 07;
   auto b1 = 06;
@@ -119,4 +119,6 @@ int main() {
   decltype(fDoSomething(char_value_1)) decltype_sum = 'b';
 
   std::cout << decltype_sum << std::endl;
+
+  return 0;
 }
