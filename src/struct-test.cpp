@@ -22,17 +22,34 @@ int main() {
 
   // std::cout << s1 << s2 << std::endl;
 
- /* std::string s3;
+  /* std::string s3;
 
-  while (std::cin >> s3) {
-    std::cout << s3 << std::endl;
-  }*/
+   while (std::cin >> s3) {
+     std::cout << s3 << std::endl;
+   }*/
 
-  std::string s4;
+  /*std::string s4;
 
   while (std::getline(std::cin, s4)) {
     std::cout << s4 << s4.size() << std::endl;
+  }*/
+
+  std::string str("Hello, YinXi");
+
+  for (auto s : str) {
+    std::cout << s;
   }
+  std::cout << std::endl;
+
+  for (auto c : str) {
+    c = std::toupper(c);
+  }
+
+  for (auto &c : str) {
+    c = std::tolower(c);
+    std::cout << c;
+  }
+  std::cout << std::endl;
 
   return 0;
 }
