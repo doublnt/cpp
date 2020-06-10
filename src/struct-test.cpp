@@ -51,5 +51,21 @@ int main() {
   }
   std::cout << std::endl;
 
+  std::string s;
+
+  std::cout << s[0] << std::endl;
+
+  std::cout << std::string(10, '-') << std::endl;
+  std::string str_test1("Hello,World.");
+
+  for (auto &c : str_test1) {
+    c = 'X';
+  }
+  std::cout << str_test1 << std::endl;
+
+  for (char c : str_test1) {
+    c = 'B';
+  }
+  std::cout << str_test1 << std::endl;
   return 0;
 }
