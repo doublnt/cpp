@@ -1,3 +1,4 @@
+#include <cctype>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,7 +9,26 @@ using std::endl;
 using std::string;
 using std::vector;
 
+void page94_317() {
+  string cin_input;
+  vector<string> string_vector_function;
+  while (cin >> cin_input) {
+    string_vector_function.push_back(cin_input);
+  }
+
+  for (auto &item : string_vector_function) {
+    for (auto &litter_char : item) {
+      litter_char = toupper(litter_char);
+    }
+
+    cout << item << endl;
+  }
+}
+
 int main() {
+  page94_317();
+
+  return 0;
   std::vector<unsigned> unsigned_vector;
   std::vector<std::string> string_vector;
   std::vector<std::vector<long>> long_vector_vector;
