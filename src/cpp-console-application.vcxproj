@@ -148,6 +148,7 @@
     <ClCompile Include="source\Inline-Contain-Test.cpp" />
     <ClCompile Include="source\literal-test.cpp" />
     <ClCompile Include="struct-test.cpp" />
+    <ClCompile Include="Vector-test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

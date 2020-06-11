@@ -6,7 +6,7 @@
 
 #include "Sales_YinXi_Data.h"
 
-int main() {
+int main11() {
   Sales_Data_YinXi sales;
   std::cout << sales.bookNo << sales.revenue << sales.units_sold << std::endl;
 
