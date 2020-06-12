@@ -143,6 +143,7 @@
     <ClInclude Include="Sales_YinXi_Data.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="iterator-test.cpp" />
     <ClCompile Include="source\Book_Store.cpp" />
     <ClCompile Include="source\cpp-console-application.cpp" />
     <ClCompile Include="source\Inline-Contain-Test.cpp" />
