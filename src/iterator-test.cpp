@@ -87,7 +87,7 @@ void p99_323() {
   print_vector_length(unsigned_vector1.begin(), unsigned_vector1.end());
 }
 
-int main() {
+int main222() {
   string s("hello, lmy");
   if (s.begin() != s.end()) {
     *s.begin() = toupper(*s.begin());
@@ -99,4 +99,6 @@ int main() {
   binary_search(binary_vector, 2);
 
   p101_325();
+
+  return 0;
 }

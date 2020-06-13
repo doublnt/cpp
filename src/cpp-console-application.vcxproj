@@ -141,8 +141,10 @@
   <ItemGroup>
     <ClInclude Include="Sales_item.h" />
     <ClInclude Include="Sales_YinXi_Data.h" />
+    <ClInclude Include="YinXi_Base.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="array-test.cpp" />
     <ClCompile Include="iterator-test.cpp" />
     <ClCompile Include="source\Book_Store.cpp" />
     <ClCompile Include="source\cpp-console-application.cpp" />
