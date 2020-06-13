@@ -7,6 +7,33 @@ using std::endl;
 using std::string;
 using std::vector;
 
+void binary_search(vector<unsigned> vector_input, unsigned keyValue) {
+  auto begin = vector_input.begin();
+  auto end = vector_input.end();
+  auto mid = begin + vector_input.size() / 2;
+
+  bool is_found = false;
+
+  while (mid != end && *mid != keyValue) {
+    if (*mid > keyValue) {
+      begin = mid + 1;
+    } else if (*mid < keyValue) {
+      end = mid;
+    } else {
+      cout << *mid << "||" << keyValue << endl;
+      is_found = true;
+    }
+
+    mid = begin + (end - begin) / 2;
+  }
+
+  if (is_found) {
+    cout << "It is founded." << endl;
+  } else {
+    cout << "Err... Not Founded..." << endl;
+  }
+}
+
 void print_vector(vector<unsigned> vector_param) {
   for (auto item : vector_param) {
     cout << item;
@@ -42,6 +69,7 @@ int main() {
   }
 
   cout << s << endl;
-
   p99_323();
+  vector<unsigned> binary_vector(100, 2);
+  binary_search(binary_vector, 2);
 }
