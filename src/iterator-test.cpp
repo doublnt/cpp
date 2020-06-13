@@ -7,6 +7,8 @@ using std::endl;
 using std::string;
 using std::vector;
 
+void print_vector(vector<unsigned> input_vector);
+
 void binary_search(vector<unsigned> vector_input, unsigned keyValue) {
   auto begin = vector_input.begin();
   auto end = vector_input.end();
@@ -25,6 +27,8 @@ void binary_search(vector<unsigned> vector_input, unsigned keyValue) {
     }
 
     mid = begin + (end - begin) / 2;
+
+    // mid = (begin + end) / 2;
   }
 
   if (is_found) {
@@ -34,9 +38,30 @@ void binary_search(vector<unsigned> vector_input, unsigned keyValue) {
   }
 }
 
+void p101_325() {
+  vector<unsigned> vector_input{11, 22, 34, 5,  6,  7, 12,
+                                54, 67, 32, 21, 66, 34};
+
+  vector<unsigned> vector_output(11, 0);
+
+  auto local_begin = vector_input.begin();
+  auto local_end = vector_input.end();
+
+  auto vector_output_begin = vector_output.begin();
+
+  for (local_begin; local_begin != local_end; ++local_begin) {
+    //++vector_int_array[*local_begin / 10];
+    auto index = *local_begin / 10;
+    ++*(vector_output_begin + index);
+  }
+
+  print_vector(vector_input);
+  print_vector(vector_output);
+}
+
 void print_vector(vector<unsigned> vector_param) {
   for (auto item : vector_param) {
-    cout << item;
+    cout << item << "\t";
   }
   cout << endl;
 }
@@ -72,4 +97,6 @@ int main() {
   p99_323();
   vector<unsigned> binary_vector(100, 2);
   binary_search(binary_vector, 2);
+
+  p101_325();
 }
