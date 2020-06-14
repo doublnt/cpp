@@ -15,6 +15,16 @@ void print_array(unsigned *arr, unsigned length) {
   cout << endl;
 }
 
+void p110_337() {
+  const char ca[] = {'h', 'e', 'l', 'l', 'o'};
+  const char *cp = ca;
+
+  while (*cp) {
+    cout << *cp << " ";
+    ++cp;
+  }
+}
+
 void p108_335() {
   unsigned arr[5] = {123, 4, 4, 5};
 
@@ -46,6 +56,7 @@ int main() {
   cout << *p1 << endl;
 
   p108_335();
+  p110_337();
 
   return 0;
 }
