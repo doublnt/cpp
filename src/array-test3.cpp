@@ -30,14 +30,13 @@ void p116_343() {
   // int(*begin)[4] = int_array;
   // int(*end)[4] = begin + 3;
 
-  for (int(*begin)[4] = std::begin(int_array); begin != std::end(int_array);
+  for (int (*begin)[4] = std::begin(int_array); begin != std::end(int_array);
        ++begin) {
     for (int *start = std::begin(*begin); start != std::end(*begin); ++start) {
       cout << *start << "\t";
     }
     cout << endl;
   }
-
   cout << split_value << endl;
 }
 
