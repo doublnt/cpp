@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClCompile Include="array-test.cpp" />
     <ClCompile Include="array-test2.cpp" />
+    <ClCompile Include="array-test3.cpp" />
     <ClCompile Include="iterator-test.cpp" />
     <ClCompile Include="source\Book_Store.cpp" />
     <ClCompile Include="source\cpp-console-application.cpp" />

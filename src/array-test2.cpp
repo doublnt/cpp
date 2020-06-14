@@ -64,7 +64,7 @@ void p108_335() {
   print_array(arr, 5);
 }
 
-int main() {
+int main444() {
   unsigned arr[10] = {1, 2, 3, 4, 5};
 
   unsigned *p1 = &arr[3];
