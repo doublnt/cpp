@@ -1,6 +1,6 @@
 #include "YinXi_Base.h"
 
-int main() {
+int main333() {
   // unsigned unsigned_array[1] = {1, 2}; too many to initialized
   unsigned unsigend_array2[2] = {2};
 
@@ -26,7 +26,7 @@ int main() {
   vector<unsigned> unsigned_vector(10, 0);
 
   unsigned count = 0;
-  for (auto &item : unsigned_vector) {
+  for (auto& item : unsigned_vector) {
     item = 10 * count++;
   }
   print_vector_base(unsigned_vector);
@@ -48,7 +48,7 @@ int main() {
   unsigned score[11];
   unsigned grade;
 
-  while (cin >> grade) {
+  /*while (cin >> grade) {
     if (grade <= 100) {
       ++score[grade / 10];
     }
@@ -57,5 +57,25 @@ int main() {
   for (size_t i = 0; i < 10; ++i) {
     cout << score[i] << "\t";
   }
-  cout << endl;
+  cout << endl;*/
+
+  unsigned array_1[5] = {1, 2, 3, 4, 5};
+
+  unsigned* p = array_1;
+
+  unsigned* p_end = &array_1[length];
+
+  for (p; p != p_end; ++p) {
+    cout << *p << endl;
+  }
+
+  unsigned* p1 = p + 21;
+
+  cout << *p1 << endl;
+
+  if (p1 == p_end) {
+    cout << "1111" << endl;
+  }
+
+  return 0;
 }
