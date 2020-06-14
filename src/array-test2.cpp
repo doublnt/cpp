@@ -1,8 +1,11 @@
 // Comment for duplicated definition.
 //#include "YinXi_Base.h"
 #include <iostream>
+#include <vector>
+
 using std::cout;
 using std::endl;
+using std::vector;
 
 void print_array(unsigned *arr, unsigned length) {
   auto end = arr + length;
@@ -15,6 +18,19 @@ void print_array(unsigned *arr, unsigned length) {
   cout << endl;
 }
 
+void p112_341() {
+  unsigned arr[10] = {1, 2, 3, 4, 5};
+  auto begin = std::begin(arr);
+  auto end = std::end(arr);
+
+  vector<unsigned> vec(begin, end);
+
+  for (auto i : vec) {
+    cout << i << "\t";
+  }
+  cout << endl;
+}
+
 void p110_337() {
   const char ca[] = {'h', 'e', 'l', 'l', 'o'};
   const char *cp = ca;
@@ -23,6 +39,8 @@ void p110_337() {
     cout << *cp << " ";
     ++cp;
   }
+
+  cout << endl;
 }
 
 void p108_335() {
@@ -57,6 +75,7 @@ int main() {
 
   p108_335();
   p110_337();
+  p112_341();
 
   return 0;
 }
