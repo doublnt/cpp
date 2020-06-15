@@ -56,8 +56,20 @@ void array_pointer_test() {
   cout << &p2 << endl;
 }
 
+int return_bigger_one(const int value, const int *p_value) {
+  if (value > *p_value) {
+    return value;
+  } else {
+    return *p_value;
+  }
+}
+
 int main() {
   // p116_343();
-  array_pointer_test();
+  // array_pointer_test();
+  int value = 100;
+  const int *pointer1 = &value;
+  cout << return_bigger_one(100, pointer1) << endl;
+
   return 0;
 }
