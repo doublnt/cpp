@@ -30,7 +30,7 @@ void p116_343() {
   // int(*begin)[4] = int_array;
   // int(*end)[4] = begin + 3;
 
-  for (int (*begin)[4] = std::begin(int_array); begin != std::end(int_array);
+  for (int(*begin)[4] = std::begin(int_array); begin != std::end(int_array);
        ++begin) {
     for (int *start = std::begin(*begin); start != std::end(*begin); ++start) {
       cout << *start << "\t";
@@ -40,7 +40,24 @@ void p116_343() {
   cout << split_value << endl;
 }
 
+void array_pointer_test() {
+  int a[5] = {1, 2, 3, 4};
+
+  int *p = a;
+  cout << *p << endl;  //
+  cout << &p << endl;
+
+  int *p1 = p + 4;
+  cout << *p1 << endl;  //
+  cout << &p1 << endl;
+
+  int *p2 = p + 10;
+  cout << *p2 << endl;
+  cout << &p2 << endl;
+}
+
 int main() {
-  p116_343();
+  // p116_343();
+  array_pointer_test();
   return 0;
 }
