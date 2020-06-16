@@ -56,5 +56,8 @@
     <ClCompile Include="array-test3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="const-test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
