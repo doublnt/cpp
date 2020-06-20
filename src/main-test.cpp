@@ -26,8 +26,7 @@ int reture_demo() {
   return 22;
 }
 
-const string& return_reference_string_type(const string& val1,
-                                           const string& val2) {
+const string& short_string(const string& val1, const string& val2) {
   return val1.size() > val2.size() ? val1 : val2;
 }
 
@@ -51,6 +50,13 @@ bool str_subrange(const string& str1, const string& str2) {
 
 int& get(int* array, int index) { return array[index]; }
 
+const string& short_string(string& s1, string& s2) {
+  auto& r = short_string(const_cast<const string&>(s1),
+                         const_cast<const string&>(s2));
+
+  return const_cast<string&>(r);
+}
+
 int main() {
   error_msg({"Error Message", "Okay Message"});
 
@@ -67,6 +73,6 @@ int main() {
 
   cout << ia[2] << endl;
 
-  //cout << reture_demo() << endl;
+  // cout << reture_demo() << endl;
   return 0;
 }
