@@ -26,6 +26,11 @@ int reture_demo() {
   return 22;
 }
 
+const string& return_reference_string_type(const string& val1,
+                                           const string& val2) {
+  return val1.size() > val2.size() ? val1 : val2;
+}
+
 int main() {
   error_msg({"Error Message", "Okay Message"});
 
