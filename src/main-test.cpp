@@ -57,9 +57,20 @@ const string& short_string(string& s1, string& s2) {
   return const_cast<string&>(r);
 }
 
-int main() {
-  error_msg({"Error Message", "Okay Message"});
+inline string& short_string_v2(string& s1, string& s2) {
+  return s1.size() <= s2.size() ? s1 : s2;
+}
 
+constexpr int get_const_expr() { return 12; }
+
+void pre_define() {
+  cout << __FILE__ << endl;
+  cout << __LINE__ << endl;
+  cout << __TIME__ << endl;
+  cout << __DATE__ << endl;
+}
+
+void array_test1() {
   int array[] = {1, 2, 3, 4, 5};
   unsigned index = 1;
 
@@ -74,5 +85,12 @@ int main() {
   cout << ia[2] << endl;
 
   // cout << reture_demo() << endl;
+}
+
+int main() {
+  error_msg({"Error Message", "Okay Message"});
+
+  pre_define();
+
   return 0;
 }
