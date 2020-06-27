@@ -87,7 +87,7 @@ void array_test1() {
   // cout << reture_demo() << endl;
 }
 
-int main() {
+int main121() {
   error_msg({"Error Message", "Okay Message"});
 
   pre_define();
