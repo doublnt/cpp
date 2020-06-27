@@ -150,6 +150,7 @@
     <ClCompile Include="const-test.cpp" />
     <ClCompile Include="iterator-test.cpp" />
     <ClCompile Include="main-test.cpp" />
+    <ClCompile Include="Sales-Item-Test.cpp" />
     <ClCompile Include="source\Book_Store.cpp" />
     <ClCompile Include="source\cpp-console-application.cpp" />
     <ClCompile Include="source\Inline-Contain-Test.cpp" />
