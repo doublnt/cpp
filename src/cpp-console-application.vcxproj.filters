@@ -4,10 +4,13 @@
     <Filter Include="standford">
       <UniqueIdentifier>{c78ff8fa-dba8-4b4b-a18d-9a8679210b83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="standford\chapter1">
+      <UniqueIdentifier>{29ea233c-94f6-422b-a35f-350f28a14f74}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="quadratic.cpp">
-      <Filter>standford</Filter>
+      <Filter>standford\chapter1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
