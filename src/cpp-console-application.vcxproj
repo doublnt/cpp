@@ -19,7 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="quadratic.cpp" />
+    <ClCompile Include="t_string.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="quadratic.h" />
+    <ClInclude Include="t_string.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
