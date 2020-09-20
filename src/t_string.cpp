@@ -17,12 +17,12 @@ void nameDiamond(string s) {
     cout << endl;
   }*/
 
-  for (int i = 0; i < s.length(); ++i) {
+  for (size_t i = 0; i < s.length(); ++i) {
     cout << s.substr(0, i + 1) << endl;
   }
 
-  for (auto j = 1; j < s.length(); ++j) {
-    for (int k = 0; k < j; ++k) {
+  for (size_t j = 1; j < s.length(); ++j) {
+    for (size_t k = 0; k < j; ++k) {
       cout << " ";
     }
     cout << s.substr(j) << endl;
