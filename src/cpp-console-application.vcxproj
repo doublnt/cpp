@@ -22,8 +22,10 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="quadratic.cpp" />
     <ClCompile Include="t_string.cpp" />
+    <ClCompile Include="mystery.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="mystery.h" />
     <ClInclude Include="quadratic.h" />
     <ClInclude Include="t_string.h" />
   </ItemGroup>

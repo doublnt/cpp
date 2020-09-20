@@ -18,12 +18,18 @@
     <ClCompile Include="t_string.cpp">
       <Filter>standford\chapter1</Filter>
     </ClCompile>
+    <ClCompile Include="mystery.cpp">
+      <Filter>standford\chapter1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="quadratic.h">
       <Filter>standford\chapter1</Filter>
     </ClInclude>
     <ClInclude Include="t_string.h">
+      <Filter>standford\chapter1</Filter>
+    </ClInclude>
+    <ClInclude Include="mystery.h">
       <Filter>standford\chapter1</Filter>
     </ClInclude>
   </ItemGroup>
