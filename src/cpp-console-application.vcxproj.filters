@@ -1,69 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="standford">
+      <UniqueIdentifier>{c78ff8fa-dba8-4b4b-a18d-9a8679210b83}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="standford\chapter1">
+      <UniqueIdentifier>{29ea233c-94f6-422b-a35f-350f28a14f74}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sales_item.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sales_YinXi_Data.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="YinXi_Base.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="main.cpp">
+      <Filter>standford</Filter>
+    </ClCompile>
+    <ClCompile Include="quadratic.cpp">
+      <Filter>standford\chapter1</Filter>
+    </ClCompile>
+    <ClCompile Include="t_string.cpp">
+      <Filter>standford\chapter1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\Book_Store.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\cpp-console-application.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Inline-Contain-Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\literal-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="struct-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vector-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="iterator-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="array-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="array-test2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="array-test3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="const-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main-test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sales-Item-Test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="quadratic.h">
+      <Filter>standford\chapter1</Filter>
+    </ClInclude>
+    <ClInclude Include="t_string.h">
+      <Filter>standford\chapter1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
