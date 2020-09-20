@@ -10,21 +10,21 @@ void print_npos() {
 }
 
 void nameDiamond(string s) {
-  for (auto i = 0; i < s.size(); ++i) {
+  /*for (auto i = 0; i < s.size(); ++i) {
     for (auto j = 0; j <= i; ++j) {
       cout << s[j];
     }
     cout << endl;
+  }*/
+
+  for (int i = 0; i < s.length(); ++i) {
+    cout << s.substr(0, i + 1) << endl;
   }
 
-  for (auto j = 1; j < s.size(); ++j) {
+  for (auto j = 1; j < s.length(); ++j) {
     for (int k = 0; k < j; ++k) {
       cout << " ";
     }
-
-    for (int i = j; i < s.size(); ++i) {
-      cout << s[i];
-    }
-    cout << endl;
+    cout << s.substr(j) << endl;
   }
 }
