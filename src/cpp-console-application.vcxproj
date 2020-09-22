@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="method.cpp" />
     <ClCompile Include="quadratic.cpp" />
     <ClCompile Include="t_string.cpp" />
     <ClCompile Include="mystery.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="i_method.h" />
     <ClInclude Include="mystery.h" />
     <ClInclude Include="quadratic.h" />
     <ClInclude Include="t_string.h" />
