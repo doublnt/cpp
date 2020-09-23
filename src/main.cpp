@@ -8,24 +8,39 @@
 using namespace std;
 
 int main() {
-  /*double root1, root2;
-  get_roots(1, 2, 3, root1, root2);
-  cout << root1 << "||" << root2 << endl;
+	/*double root1, root2;
+	get_roots(1, 2, 3, root1, root2);
+	cout << root1 << "||" << root2 << endl;
 
-  print_npos();
+	print_npos();
 
-  string a = "marty";
-  string b = "stepp";
+	string a = "marty";
+	string b = "stepp";
 
-  mystery(a, b);
+	mystery(a, b);
 
-  cout << a << "  " << b << endl;
+	cout << a << "  " << b << endl;
 
-  nameDiamond("Robert");*/
+	nameDiamond("Robert");*/
 
-  string a = "if (a(4) > 9) {foo(a(2)); }";
+	string a = "if (a(4) > 9) {foo(a(2)); }";
 
-  cout << checkBalance(a) << endl;
+	cout << checkBalance(a) << endl;
 
-  return 0;
+	queue<string> queue;
+	queue.push("111");
+	queue.push("222");
+	queue.push("333");
+
+	reverseQueue(queue);
+
+	cout << "{ ";
+	while (!queue.empty())
+	{
+		cout << queue.front() << ", ";
+		queue.pop();
+	}
+	cout << " }" << endl;
+
+	return 0;
 }
