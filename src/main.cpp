@@ -41,6 +41,7 @@ int main() {
 		queue.pop();
 	}
 	cout << " }" << endl;
+	cout << factorial(5) << endl;
 
 	return 0;
 }
