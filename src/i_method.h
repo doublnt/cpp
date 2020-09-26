@@ -10,3 +10,5 @@ int checkBalance(string code);
 void reverseQueue(queue<string>& c_queue);
 
 int factorial(int n);
+
+bool recursiveString(string str);
