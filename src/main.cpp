@@ -42,5 +42,9 @@ int main() {
 	}
 	cout << " }" << endl;
 
+	cout << factorial(5) << endl;
+
+	auto aResult = recursiveString("aba");
+
 	return 0;
 }

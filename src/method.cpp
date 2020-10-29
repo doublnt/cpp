@@ -57,3 +57,35 @@ void reverseQueue(queue<string>& c_queue)
 		stack.pop();
 	}
 }
+
+int factorial(int n) {
+	if (n > 1) {
+		return n * factorial(n - 1);
+	}
+	else {
+		return 1;
+	}
+}
+
+bool recursiveString(string str) {
+	if (str.length() <= 1)
+	{
+		return false;
+	}
+
+	char c = str[0];
+	char c_last = str[str.length() - 1];
+	string middle = str.substr(1, str.length() - 2);
+
+	if (c != c_last)
+	{
+		return false;
+	}
+
+	if (c == c_last && recursiveString(middle))
+	{
+		return true;
+	}
+
+	return false;
+}
