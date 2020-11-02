@@ -4,7 +4,7 @@
 using namespace std;
 
 int getLandPerimeter(vector<vector<int>>& ve){
-	
+		
 }
 
 int islandPerimeter(vector<vector<int>>& grid){
