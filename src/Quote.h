@@ -20,7 +20,12 @@ protected:
 
 class Bulk_quote :public Quote {
 public:
+	Bulk_quote() = default;
+	Bulk_quote(const string&, double, size_t, double);
 	double net_price(size_t n) const override;
+private:
+	size_t min_qty = 0;
+	double discount = 0.0;
 };
 
 double print_total(ostream& os, const Quote& item, size_t n) {
