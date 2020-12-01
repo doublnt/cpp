@@ -11,6 +11,9 @@ public:
 		return n * price;
 	}
 	virtual ~Quote() = default; // 对析构函数进行动态绑定
+	virtual void debug() {
+		cout << "private string bookNO" << " protected double price" << endl;
+	}
 private:
 	string bookNo;
 protected:
@@ -23,6 +26,9 @@ public:
 	Bulk_quote() = default;
 	Bulk_quote(const string& book, double p, size_t qty, double disc) : Quote(book, p), min_qty(qty), discount(disc) {}
 	double net_price(size_t n) const override;
+	void debug() override{
+		cout << "private size_t qty" << " private double discount" << endl;
+	}
 private:
 	size_t min_qty = 0;
 	double discount = 0.0;
