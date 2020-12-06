@@ -14,6 +14,13 @@ public:
 	virtual void debug() {
 		cout << "private string bookNO" << " protected double price" << endl;
 	}
+	virtual Quote* clone() const& {
+		return new Quote(*this);
+	}
+
+	virtual Quote* clone()&& {
+		return new Quote(std::move(*this));
+	}
 private:
 	string bookNo;
 protected:
@@ -26,8 +33,15 @@ public:
 	Bulk_quote() = default;
 	Bulk_quote(const string& book, double p, size_t qty, double disc) : Quote(book, p), min_qty(qty), discount(disc) {}
 	double net_price(size_t n) const override;
-	void debug() override{
+	void debug() override {
 		cout << "private size_t qty" << " private double discount" << endl;
+	}
+	Bulk_quote* clone() const& {
+		return new Bulk_quote(*this);
+	}
+
+	Bulk_quote* clone()&& {
+		return new Bulk_quote(std::move(*this));
 	}
 private:
 	size_t min_qty = 0;
